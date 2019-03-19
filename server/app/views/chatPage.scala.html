@@ -1,0 +1,9 @@
+@* chatPage Template File *@
+@()
+
+@main("Chatting with Websockets") {
+	<input type="text" id="input-field" size="80"></input>
+	<br>
+	<textarea id="chat-text" rows="40" cols="80"></textarea>
+	<script src="@routes.Assets.versioned("javascript/chat.js")"></script>
+}

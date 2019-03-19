@@ -2,7 +2,7 @@
 @(monthYearForm: Form[edu.trinity.webapps.controllers.MonthYear])(implicit request: MessagesRequestHeader, flash:Flash)
 
 @main("Historical Temps for SA") {
-	<h2>Historical San Antonio Temps</h2>
+	<h2 id="heading">Historical San Antonio Temps</h2>
 	GET -
 	<form action="temp" method="get">
 		<input type="text" name="month"></input>/<input type="text" name="year"></input>

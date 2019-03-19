@@ -16,6 +16,10 @@ GET		/temp				edu.trinity.webapps.controllers.TempController.month(month: Int, y
 POST	/temp				edu.trinity.webapps.controllers.TempController.postMonth
 POST	/tempForm			edu.trinity.webapps.controllers.TempController.postMonthForm
 
+# Chat stuff
+GET		/chat				edu.trinity.webapps.controllers.WSChatController.index
+GET		/chatSocket			edu.trinity.webapps.controllers.WSChatController.socket
+
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
 GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
