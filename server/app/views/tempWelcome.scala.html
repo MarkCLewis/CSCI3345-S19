@@ -1,5 +1,5 @@
 @* tempWelcome Template File *@
-@(monthYearForm: Form[edu.trinity.webapps.controllers.MonthYear])(implicit request: MessagesRequestHeader, flash:Flash)
+@(monthYearForm: Form[MonthYear])(implicit request: MessagesRequestHeader, flash:Flash)
 
 @main("Historical Temps for SA") {
 	<h2 id="heading">Historical San Antonio Temps</h2>
@@ -17,7 +17,7 @@
 	</form>
 	<br>
 	Play POST -
-	@helper.form(action = edu.trinity.webapps.controllers.routes.TempController.postMonthForm()) {
+	@helper.form(action = routes.TempController.postMonthForm()) {
 		@helper.CSRF.formField
 		@helper.inputText(monthYearForm("month"))
 		@helper.inputText(monthYearForm("year"))
@@ -25,4 +25,9 @@
 			<button type="submit">View Month</button>
 		</div>
 	}
+	<div>
+		<input type="text" id="av-year"></input>
+		<p id="text-for-av-temp">Nothing</p>
+	</div>
+	<script src="@routes.Assets.versioned("javascript/ajaxTemp.js")"></script>
 }

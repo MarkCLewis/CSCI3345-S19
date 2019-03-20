@@ -1,4 +1,4 @@
-package edu.trinity.webapps.controllers
+package controllers
 
 import javax.inject._
 import play.api.mvc._
@@ -43,5 +43,9 @@ class TempController @Inject() (cc: MessagesControllerComponents) extends Messag
         val monthData = models.TempDataModel.monthData(monthYear.month, monthYear.year)
         Ok(views.html.monthTable(monthYear.month, monthYear.year, monthData))
       })
+  }
+  
+  def averageYearlyHigh(year: Int) = Action { implicit request =>
+    Ok(models.TempDataModel.averageHighForYear(year).toString)
   }
 }
