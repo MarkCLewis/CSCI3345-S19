@@ -5,7 +5,8 @@
 const input = document.getElementById("input-field");
 const output = document.getElementById("chat-text");
 
-const socket = new WebSocket("ws://localhost:9000/chatSocket");
+const wsRoute = document.getElementById("ws-route");
+const socket = new WebSocket(wsRoute.value.replace("http", "ws"));
 
 input.onkeydown = (event) => {
 	if(event.key ==='Enter') {

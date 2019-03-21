@@ -1,7 +1,8 @@
 @* chatPage Template File *@
-@()
+@()(implicit request: RequestHeader)
 
 @main("Chatting with Websockets") {
+	<input type="hidden" id="ws-route" value="@routes.WSChatController.socket.absoluteURL()"></input>
 	<input type="text" id="input-field" size="80"></input>
 	<br>
 	<textarea id="chat-text" rows="40" cols="80"></textarea>
