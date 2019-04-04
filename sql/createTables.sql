@@ -1,0 +1,24 @@
+CREATE TABLE product (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(200) NOT NULL,
+	price INT NOT NULL);
+
+CREATE TABLE customer (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	addr1 VARCHAR(50) NOT NULL,
+	addr2 VARCHAR(50),
+	city VARCHAR(50) NOT NULL,
+	state CHAR(2) NOT NULL,
+	zip CHAR(7) NOT NULL);
+
+CREATE TABLE order_assoc (
+	pid INT NOT NULL,
+	cid INT NOT NULL,
+	quantity INT NOT NULL,
+	FOREIGN KEY (pid)
+        REFERENCES product(id)
+        ON DELETE CASCADE,
+	FOREIGN KEY (cid)
+        REFERENCES customer(id)
+        ON DELETE CASCADE);

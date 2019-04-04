@@ -23,6 +23,9 @@ GET		/averageYearlyHigh/:year controllers.TempController.averageYearlyHigh(year:
 GET		/chat				controllers.WSChatController.index
 GET		/chatSocket			controllers.WSChatController.socket
 
+# Database stuff
+GET		/customers			controllers.SalesDBController.customers
+
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)
 GET        /versionedAssets/*file        controllers.Assets.versioned(path="/public", file: Asset)
