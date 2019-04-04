@@ -3,28 +3,29 @@
 # ~~~~
 
 # Home page
-GET     /                 	controllers.Application.index
-GET	    /multTable		 	controllers.Application.multTable
-GET		/deep/nested/file 	controllers.Application.deepFile
-GET		/enterName			controllers.Application.enterName
-GET		/rememberName		controllers.Application.rememberName(name)
-GET		/forgetName			controllers.Application.forgetName
+GET     /                 		controllers.Application.index
+GET	    /multTable		 		controllers.Application.multTable
+GET		/deep/nested/file 		controllers.Application.deepFile
+GET		/enterName				controllers.Application.enterName
+GET		/rememberName			controllers.Application.rememberName(name)
+GET		/forgetName				controllers.Application.forgetName
 
 # Temperature stuff
-GET		/tempWelcome		controllers.TempController.welcome
-GET		/temp				controllers.TempController.month(month: Int, year: Int)
-POST	/temp				controllers.TempController.postMonth
-POST	/tempForm			controllers.TempController.postMonthForm
+GET		/tempWelcome			controllers.TempController.welcome
+GET		/temp					controllers.TempController.month(month: Int, year: Int)
+POST	/temp					controllers.TempController.postMonth
+POST	/tempForm				controllers.TempController.postMonthForm
 
 # Ajax Call
 GET		/averageYearlyHigh/:year controllers.TempController.averageYearlyHigh(year: Int)
 
 # Chat stuff
-GET		/chat				controllers.WSChatController.index
-GET		/chatSocket			controllers.WSChatController.socket
+GET		/chat					controllers.WSChatController.index
+GET		/chatSocket				controllers.WSChatController.socket
 
 # Database stuff
-GET		/customers			controllers.SalesDBController.customers
+GET		/customers				controllers.SalesDBController.customers
+GET		/customerOrders/:cid	controllers.SalesDBController.customerOrders(cid: Int)
 
 # Prefix must match `play.assets.urlPrefix`
 GET        /assets/*file                 controllers.Assets.at(file)

@@ -19,7 +19,11 @@ class SalesDBController @Inject() (protected val dbConfigProvider: DatabaseConfi
 
   def customers = Action.async { implicit request =>
     val customers = SalesQueries.customers(db)
-    customers.map(custs => Ok(custs.length+" - "+custs.mkString(",")))
+    customers.map(custs => Ok(custs.length+"\n"+custs.mkString("\n")))
   }
   
+  def customerOrders(cid: Int) = Action.async { implicit request =>
+    val products = SalesQueries.customerOrders(cid, db)
+    products.map(prods => Ok(prods.length+"\n"+prods.mkString("\n")))
+  }
 }

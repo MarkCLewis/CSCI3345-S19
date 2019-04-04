@@ -14,4 +14,23 @@ object SalesQueries {
     }
   }
 
+  def products(db: Database)(implicit ec: ExecutionContext): Future[Seq[ProductRow]] = {
+    db.run {
+      (for (p <- Product) yield p).result
+    }
+  }
+  
+  def customerOrders(cid: Int, db: Database)(implicit ec: ExecutionContext): Future[Seq[ProductRow]] = {
+    db.run {
+      val joinedData = for { 
+        oa <- OrderAssoc
+        if oa.cid === cid
+        p <- Product
+        if oa.pid === p.id
+      } yield {
+        p
+      }
+      joinedData.result
+    }
+  }
 }
