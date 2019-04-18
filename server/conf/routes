@@ -24,6 +24,7 @@ GET		/chat					controllers.WSChatController.index
 GET		/chatSocket				controllers.WSChatController.socket
 
 # Database stuff
+GET		/sales					controllers.SalesDBController.index
 GET		/customers				controllers.SalesDBController.customers
 GET		/customerOrders/:cid	controllers.SalesDBController.customerOrders(cid: Int)
 

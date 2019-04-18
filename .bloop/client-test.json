@@ -1,0 +1,406 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "client-test",
+        "directory" : "/home/mlewis/workspaceCourses/CSCI3345-S19/client",
+        "sources" : [
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/client/src/test/scala-2.12",
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/client/src/test/scala",
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/client/src/test/java",
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/client/target/scala-2.12/src_managed/test"
+        ],
+        "dependencies" : [
+            "sharedJS",
+            "client"
+        ],
+        "classpath" : [
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/.bloop/client/scala-2.12/classes",
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/.bloop/sharedJS/scala-2.12/classes",
+            "/home/mlewis/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar",
+            "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar",
+            "/home/mlewis/.ivy2/cache/com.typesafe.play/play-json_2.12/jars/play-json_2.12-2.7.0.jar",
+            "/home/mlewis/.ivy2/cache/com.typesafe.play/play-functional_2.12/jars/play-functional_2.12-2.7.0.jar",
+            "/home/mlewis/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.5.jar",
+            "/home/mlewis/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar",
+            "/home/mlewis/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/bundles/scala-collection-compat_2.12-0.1.1.jar",
+            "/home/mlewis/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.10.1.jar",
+            "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.9.8.jar",
+            "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.9.8.jar",
+            "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.9.8.jar",
+            "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.9.8.jar",
+            "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.9.8.jar",
+            "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/jars/scalajs-dom_sjs0.6_2.12-0.9.5.jar",
+            "/home/mlewis/.ivy2/cache/org.querki/jquery-facade_sjs0.6_2.12/jars/jquery-facade_sjs0.6_2.12-1.2.jar",
+            "/home/mlewis/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.12/jars/querki-jsext_sjs0.6_2.12-0.8.jar",
+            "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar"
+        ],
+        "out" : "/home/mlewis/workspaceCourses/CSCI3345-S19/.bloop/client",
+        "classesDir" : "/home/mlewis/workspaceCourses/CSCI3345-S19/.bloop/client/scala-2.12/test-classes",
+        "resources" : [
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/client/src/test/resources",
+            "/home/mlewis/workspaceCourses/CSCI3345-S19/client/target/scala-2.12/resource_managed/test"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.5",
+            "options" : [
+                "-P:scalajs:mapSourceURI:file:/home/mlewis/workspaceCourses/CSCI3345-S19/client/src/main/scala/->d96a61f999f82ea2b22c/",
+                "-P:scalajs:sjsDefinedByDefault",
+                "-P:semanticdb:synthetics:on",
+                "-P:semanticdb:failures:warning",
+                "-P:semanticdb:sourceroot:/home/mlewis/workspaceCourses/CSCI3345-S19",
+                "-Yrangepos",
+                "-Xplugin-require:semanticdb",
+                "-Xplugin:/home/mlewis/.ivy2/cache/org.scala-js/scalajs-compiler_2.12.5/jars/scalajs-compiler_2.12.5-0.6.23.jar",
+                "-Xplugin:/home/mlewis/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.5/jars/semanticdb-scalac_2.12.5-4.1.4.jar"
+            ],
+            "jars" : [
+                "/home/mlewis/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.5.jar",
+                "/home/mlewis/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar",
+                "/home/mlewis/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.5.jar",
+                "/home/mlewis/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/home/mlewis/.ivy2/cache/jline/jline/jars/jline-2.14.5.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "js",
+            "config" : {
+                "version" : "0.6.23",
+                "mode" : "debug",
+                "kind" : "none",
+                "emitSourceMaps" : false,
+                "jsdom" : false,
+                "toolchain" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.5.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-library_2.12",
+                    "version" : "0.6.23",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-library_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-library_2.12/jars/scalajs-library_2.12-0.6.23.jar"
+                        },
+                        {
+                            "name" : "scalajs-library_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-library_2.12/srcs/scalajs-library_2.12-0.6.23-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.play",
+                    "name" : "play-json_2.12",
+                    "version" : "2.7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "play-json_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/com.typesafe.play/play-json_2.12/jars/play-json_2.12-2.7.0.jar"
+                        },
+                        {
+                            "name" : "play-json_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/com.typesafe.play/play-json_2.12/srcs/play-json_2.12-2.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.typesafe.play",
+                    "name" : "play-functional_2.12",
+                    "version" : "2.7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "play-functional_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/com.typesafe.play/play-functional_2.12/jars/play-functional_2.12-2.7.0.jar"
+                        },
+                        {
+                            "name" : "play-functional_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/com.typesafe.play/play-functional_2.12/srcs/play-functional_2.12-2.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.12.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.5.jar"
+                        },
+                        {
+                            "name" : "scala-reflect",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.12.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.typelevel",
+                    "name" : "macro-compat_2.12",
+                    "version" : "1.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "macro-compat_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/org.typelevel/macro-compat_2.12/jars/macro-compat_2.12-1.1.1.jar"
+                        },
+                        {
+                            "name" : "macro-compat_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.typelevel/macro-compat_2.12/srcs/macro-compat_2.12-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-collection-compat_2.12",
+                    "version" : "0.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-collection-compat_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/bundles/scala-collection-compat_2.12-0.1.1.jar"
+                        },
+                        {
+                            "name" : "scala-collection-compat_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-lang.modules/scala-collection-compat_2.12/srcs/scala-collection-compat_2.12-0.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "joda-time",
+                    "name" : "joda-time",
+                    "version" : "2.10.1",
+                    "artifacts" : [
+                        {
+                            "name" : "joda-time",
+                            "path" : "/home/mlewis/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.10.1.jar"
+                        },
+                        {
+                            "name" : "joda-time",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-core",
+                    "version" : "2.9.8",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-core",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.9.8.jar"
+                        },
+                        {
+                            "name" : "jackson-core",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/srcs/jackson-core-2.9.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-annotations",
+                    "version" : "2.9.8",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-annotations",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.9.8.jar"
+                        },
+                        {
+                            "name" : "jackson-annotations",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/srcs/jackson-annotations-2.9.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-databind",
+                    "version" : "2.9.8",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-databind",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.9.8.jar"
+                        },
+                        {
+                            "name" : "jackson-databind",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/srcs/jackson-databind-2.9.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.datatype",
+                    "name" : "jackson-datatype-jdk8",
+                    "version" : "2.9.8",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-datatype-jdk8",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.9.8.jar"
+                        },
+                        {
+                            "name" : "jackson-datatype-jdk8",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/srcs/jackson-datatype-jdk8-2.9.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.datatype",
+                    "name" : "jackson-datatype-jsr310",
+                    "version" : "2.9.8",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-datatype-jsr310",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.9.8.jar"
+                        },
+                        {
+                            "name" : "jackson-datatype-jsr310",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/srcs/jackson-datatype-jsr310-2.9.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-dom_sjs0.6_2.12",
+                    "version" : "0.9.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-dom_sjs0.6_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/jars/scalajs-dom_sjs0.6_2.12-0.9.5.jar"
+                        },
+                        {
+                            "name" : "scalajs-dom_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.12/srcs/scalajs-dom_sjs0.6_2.12-0.9.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.querki",
+                    "name" : "jquery-facade_sjs0.6_2.12",
+                    "version" : "1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jquery-facade_sjs0.6_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/org.querki/jquery-facade_sjs0.6_2.12/jars/jquery-facade_sjs0.6_2.12-1.2.jar"
+                        },
+                        {
+                            "name" : "jquery-facade_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.querki/jquery-facade_sjs0.6_2.12/srcs/jquery-facade_sjs0.6_2.12-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.querki",
+                    "name" : "querki-jsext_sjs0.6_2.12",
+                    "version" : "0.8",
+                    "artifacts" : [
+                        {
+                            "name" : "querki-jsext_sjs0.6_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.12/jars/querki-jsext_sjs0.6_2.12-0.8.jar"
+                        },
+                        {
+                            "name" : "querki-jsext_sjs0.6_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.querki/querki-jsext_sjs0.6_2.12/srcs/querki-jsext_sjs0.6_2.12-0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-js",
+                    "name" : "scalajs-test-interface_2.12",
+                    "version" : "0.6.23",
+                    "artifacts" : [
+                        {
+                            "name" : "scalajs-test-interface_2.12",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/jars/scalajs-test-interface_2.12-0.6.23.jar"
+                        },
+                        {
+                            "name" : "scalajs-test-interface_2.12",
+                            "classifier" : "sources",
+                            "path" : "/home/mlewis/.ivy2/cache/org.scala-js/scalajs-test-interface_2.12/srcs/scalajs-test-interface_2.12-0.6.23-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

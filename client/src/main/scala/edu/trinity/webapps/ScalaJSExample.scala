@@ -6,7 +6,10 @@ import org.scalajs.dom
 object ScalaJSExample {
 
   def main(args: Array[String]): Unit = {
-    dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
+    if(dom.document.getElementById("scalajsShoutOut") != null) {
+      dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
+    }
+    if(dom.document.getElementById("sales-stuff") != null) SalesClient.pageSetup()
   }
   
   case class NotAString(i: Int, s: String)
