@@ -1,5 +1,7 @@
 package models
 
+import edu.trinity.webapps.shared.SharedSales._
+
 // AUTO-GENERATED Slick data model
 /** Stand-alone Slick data model for immediate use */
 object Tables extends {
@@ -8,6 +10,7 @@ object Tables extends {
 
 /** Slick data model trait for extension, choice of backend or usage in the cake pattern. (Make sure to initialize this late.) */
 trait Tables {
+
   val profile: slick.jdbc.JdbcProfile
   import profile.api._
   import slick.model.ForeignKeyAction
@@ -19,17 +22,6 @@ trait Tables {
   @deprecated("Use .schema instead of .ddl", "3.0")
   def ddl = schema
 
-  /**
-   * Entity class storing rows of table Customer
-   *  @param id Database column id SqlType(INT), AutoInc, PrimaryKey
-   *  @param name Database column name SqlType(VARCHAR), Length(50,true)
-   *  @param addr1 Database column addr1 SqlType(VARCHAR), Length(50,true)
-   *  @param addr2 Database column addr2 SqlType(VARCHAR), Length(50,true), Default(None)
-   *  @param city Database column city SqlType(VARCHAR), Length(50,true)
-   *  @param state Database column state SqlType(CHAR), Length(2,false)
-   *  @param zip Database column zip SqlType(CHAR), Length(7,false)
-   */
-  case class CustomerRow(id: Int, name: String, addr1: String, addr2: Option[String] = None, city: String, state: String, zip: String)
   /** GetResult implicit for fetching CustomerRow objects using plain SQL queries */
   implicit def GetResultCustomerRow(implicit e0: GR[Int], e1: GR[String], e2: GR[Option[String]]): GR[CustomerRow] = GR{
     prs => import prs._
@@ -59,13 +51,6 @@ trait Tables {
   /** Collection-like TableQuery object for table Customer */
   lazy val Customer = new TableQuery(tag => new Customer(tag))
 
-  /**
-   * Entity class storing rows of table OrderAssoc
-   *  @param pid Database column pid SqlType(INT)
-   *  @param cid Database column cid SqlType(INT)
-   *  @param quantity Database column quantity SqlType(INT)
-   */
-  case class OrderAssocRow(pid: Int, cid: Int, quantity: Int)
   /** GetResult implicit for fetching OrderAssocRow objects using plain SQL queries */
   implicit def GetResultOrderAssocRow(implicit e0: GR[Int]): GR[OrderAssocRow] = GR{
     prs => import prs._
@@ -92,13 +77,6 @@ trait Tables {
   /** Collection-like TableQuery object for table OrderAssoc */
   lazy val OrderAssoc = new TableQuery(tag => new OrderAssoc(tag))
 
-  /**
-   * Entity class storing rows of table Product
-   *  @param id Database column id SqlType(INT), AutoInc, PrimaryKey
-   *  @param name Database column name SqlType(VARCHAR), Length(200,true)
-   *  @param price Database column price SqlType(INT)
-   */
-  case class ProductRow(id: Int, name: String, price: Int)
   /** GetResult implicit for fetching ProductRow objects using plain SQL queries */
   implicit def GetResultProductRow(implicit e0: GR[Int], e1: GR[String]): GR[ProductRow] = GR{
     prs => import prs._

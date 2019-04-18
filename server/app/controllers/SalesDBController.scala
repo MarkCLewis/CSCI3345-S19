@@ -14,7 +14,7 @@ import scala.concurrent.ExecutionContext
 import slick.jdbc.MySQLProfile.api._ // This line determines what type of database you are connecting to.
 import play.api.libs.json.Json
 
-import models.SalesJSON._
+import edu.trinity.webapps.shared.SharedSales._
 
 @Singleton
 class SalesDBController @Inject() (protected val dbConfigProvider: DatabaseConfigProvider, cc: ControllerComponents)(implicit ec: ExecutionContext)

@@ -6,6 +6,7 @@ import scala.concurrent.Await
 import scala.concurrent.Future
 import Tables._
 import scala.concurrent.ExecutionContext
+import edu.trinity.webapps.shared.SharedSales._
 
 object SalesQueries {
   def customers(db: Database)(implicit ec: ExecutionContext): Future[Seq[CustomerRow]] = {
