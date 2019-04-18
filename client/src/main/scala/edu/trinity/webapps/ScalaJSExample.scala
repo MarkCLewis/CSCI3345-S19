@@ -10,6 +10,7 @@ object ScalaJSExample {
       dom.document.getElementById("scalajsShoutOut").textContent = SharedMessages.itWorks
     }
     if(dom.document.getElementById("sales-stuff") != null) SalesClient.pageSetup()
+    if(dom.document.getElementById("canvas") != null) CanvasDrawing.drawToCanvas()
   }
   
   case class NotAString(i: Int, s: String)

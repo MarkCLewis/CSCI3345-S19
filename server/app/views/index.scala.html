@@ -13,11 +13,13 @@
 <p><a href="@routes.TempController.welcome">Temperature</a></p>
 <p><a href="@routes.WSChatController.index">Chat</a></p>
 <p><a href="@routes.SalesDBController.index">Sales DB</a></p>
-
+<canvas id="canvas" width="800" height="500"></canvas>
+@*
 <table>
 	@for(i <- 1 to 12) {
 		<tr><td>@i</td></tr>
 	}
 </table>
 @(if(true) "a" else "b")
+*@
 }
