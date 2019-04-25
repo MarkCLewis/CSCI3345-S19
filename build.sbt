@@ -25,11 +25,16 @@ lazy val server = (project in file("server")).settings(commonSettings).settings(
 lazy val client = (project in file("client")).settings(commonSettings).settings(
 	name := "CSCI3345-S19-Client",
   scalaJSUseMainModuleInitializer := true,
+	addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
 	scalacOptions += "-P:scalajs:sjsDefinedByDefault",
   libraryDependencies ++= Seq(
 		"com.typesafe.play" %%% "play-json" % "2.7.0",
     "org.scala-js" %%% "scalajs-dom" % "0.9.5",
-		"org.querki" %%% "jquery-facade" % "1.2"
+		"org.querki" %%% "jquery-facade" % "1.2",
+//		"com.github.japgolly.scalajs-react" %%% "core" % "1.4.1"
+		"me.shadaj" %%% "slinky-core" % "0.6.0",
+		"me.shadaj" %%% "slinky-web" % "0.6.0",
+		"me.shadaj" %%% "slinky-scalajsreact-interop" % "0.6.0"
   )
 ).enablePlugins(ScalaJSPlugin, ScalaJSWeb).
   dependsOn(sharedJs)

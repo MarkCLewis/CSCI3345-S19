@@ -35,4 +35,7 @@ class Application @Inject()(cc: ControllerComponents) extends AbstractController
     Redirect(routes.Application.enterName).withNewSession
   }
   
+  def slinky = Action {
+    Ok(views.html.reactMain("Slinky"))
+  }
 }
