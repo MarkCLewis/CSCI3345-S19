@@ -95,7 +95,7 @@ object ReactWithSlinky {
           button(s"Add #${state.items.size + 1}")))
     }
   }
-
+  
   @react class TodoList extends StatelessComponent {
     case class Props(items: Seq[TodoItem])
 
