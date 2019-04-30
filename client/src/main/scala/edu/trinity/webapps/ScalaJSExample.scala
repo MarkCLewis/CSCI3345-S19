@@ -11,6 +11,7 @@ object ScalaJSExample {
     }
     if(dom.document.getElementById("sales-stuff") != null) SalesClient.pageSetup()
     if(dom.document.getElementById("canvas") != null) CanvasDrawing.drawToCanvas()
+    if(dom.document.getElementById("content") != null) ReactWithSlinky.runApp
   }
   
   case class NotAString(i: Int, s: String)

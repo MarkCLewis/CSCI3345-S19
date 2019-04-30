@@ -1,0 +1,17 @@
+@(title: String)
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>@title</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
+	<script crossorigin src="https://unpkg.com/react@@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@@16/umd/react-dom.development.js"></script>  </head>
+  </head>
+  <body>
+    <div id='content'></div>
+    @scalajs.html.scripts("csci3345-s19-client", routes.Assets.versioned(_).toString, name => getClass.getResource(s"/public/$name") != null)
+  </body>
+</html>
